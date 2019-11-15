@@ -1,0 +1,246 @@
+body {
+  background-color: #ffffff;
+  font-family: Gotham Pro;
+}
+body section.form-top {
+  background: url("../img/Layer2.png") no-repeat center center;
+  color: #ffffff;
+  padding: 50px 0;
+  background-size: cover;
+}
+body section.form-top .title {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+body section.form-top .title .line-3 {
+  font-family: Gotham Pro Bold;
+}
+body section.form-top .title .description {
+  font-size: 25px;
+}
+body section.form-top .info-text {
+  text-align: center;
+  font-size: 16pt;
+  padding: 20px 0;
+}
+body section.form-top #formTop {
+  width: 95%;
+  margin: 0 auto;
+}
+body section.form-top #formTop .time-header {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: Gotham Pro Bold;
+  text-align: center;
+}
+body section.form-top #formTop .time-radio {
+  text-align: center;
+  margin: 10px 0;
+}
+body section.form-top #formTop .time-radio input {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+body section.form-top #formTop .time-radio label {
+  font-family: Gotham Pro Medium;
+  font-size: 18px;
+}
+body section.form-top #formTop .time-radio .mar-lr-30 {
+  margin: 0 30px;
+}
+body section.form-top #formTop .input-form {
+  margin-top: 20px;
+}
+body section.form-top #formTop .input-form input {
+  width: 100%;
+  padding: 10px 0;
+  border-color: #ffffff;
+}
+body section.form-top #formTop .form-button {
+  margin-top: 10px;
+}
+body section.form-top #formTop #priceInfoJS .price-number {
+  font-size: 45px;
+  font-family: Gotham Pro Bold;
+  border: 2px solid #ffffff;
+}
+body section.form-top .bottom-text-form {
+  margin: 20px 0;
+}
+body section.form-top #calcOtherRouteJS span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+body section.empty {
+  height: 100px;
+}
+body footer {
+  padding: 20px 0;
+}
+body footer .text {
+  color: #9ca0a4;
+}
+
+body .black-button {
+  color: #ffffff;
+  background-color: #010304;
+  border-color: #010304;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+}
+body .blue-button {
+  color: #ffffff;
+  background-color: #005bab;
+  border-color: #005bab;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+}
+body .blue-link {
+  color: #ffffff;
+  background-color: #005bab;
+  border-color: #005bab;
+  text-transform: uppercase;
+  padding: 15px;
+  cursor: pointer;
+  min-height: 24px;
+}
+body .p10-0 {
+  padding: 10px 0;
+}
+body .p0 {
+  padding: 0;
+}
+body .m0 {
+  margin: 0;
+}
+body .pl0 {
+  padding-left: 0;
+}
+body .form-warning {
+  height: 30px;
+  text-shadow: 1px 1px 2px red, 0 0 1em red;
+}
+body .red-border {
+  border-color: red !important;
+}
+body .color-black {
+  color: #010304;
+}
+@-webkit-keyframes ld {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@-moz-keyframes ld {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@-o-keyframes ld {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@keyframes ld {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+.m-progress {
+  position: relative;
+  opacity: .8;
+  color: transparent !important;
+  text-shadow: none !important;
+}
+.m-progress:hover,
+.m-progress:active,
+.m-progress:focus {
+  cursor: default;
+  color: transparent;
+  outline: none !important;
+  box-shadow: none;
+}
+.m-progress:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background: transparent;
+  border: 1px solid #fff;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  margin-top: -12px;
+  margin-left: -12px;
+  width: 24px;
+  height: 24px;
+  -webkit-animation: ld 1s ease-in-out infinite;
+  -moz-animation: ld 1s ease-in-out infinite;
+  -o-animation: ld 1s ease-in-out infinite;
+  animation: ld 1s ease-in-out infinite;
+}
+/* Окно */
+
+.overlay_popup {
+  display:none;
+  position:fixed;
+  z-index: 999;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  background:#000;
+  opacity:0.5;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  z-index: 1000;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.object{
+  color: #000;
+  background-color: #fff;
+  /* transition: all 0.5s ease; */
+}
+
+.container-fluid {
+  background: url(../img/Layer2.png) no-repeat center center;
+  background-size: cover;
+  padding: 50px 0;
+}

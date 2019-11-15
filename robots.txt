@@ -1,0 +1,10 @@
+User-agent: Yandex          # правила для Яндекса
+Disallow: /
+
+
+User-agent: GoogleBot       # правила для Google
+Disallow: /
+
+
+User-agent: *
+Disallow: /
